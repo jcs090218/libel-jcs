@@ -21,6 +21,22 @@
 ;;; Code:
 
 
+;;;###autoload
+(defun jcs-previous-blank-line ()
+  "Move to the previous line containing nothing but whitespaces or tabs."
+  (interactive)
+  (unless (ignore-errors (or (search-backward-regexp "^[ \t]*\n") t))
+    (goto-char (point-min))))
+
+;;;###autoload
+(defun jcs-next-blank-line ()
+  "Move to the next line containing nothing but whitespaces or tabs."
+  (interactive)
+  (forward-line)
+  (if (ignore-errors (or (search-forward-regexp "^[ \t]*\n") t))
+      (forward-line -1)
+    (goto-char (point-max))))
+
 
 (provide 'libel-jcs-nav)
 ;;; libel-jcs-nav.el ends here
