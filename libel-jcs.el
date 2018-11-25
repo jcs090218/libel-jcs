@@ -25,22 +25,22 @@
 
 ;;; Code:
 
-(load-file "~/libel-jcs-list.el")
-(load-file "~/libel-jcs-string.el")
-(load-file "~/libel-jcs-nav.el")
-(load-file "~/libel-jcs-comment.el")
+(load-file "./libel-jcs-list.el")
+(load-file "./libel-jcs-string.el")
+(load-file "./libel-jcs-nav.el")
+(load-file "./libel-jcs-comment.el")
 
-(load-file "~/libel-jcs-file.el")
+(load-file "./libel-jcs-file.el")
 
-(load-file "~/libel-jcs-io.el")
-(load-file "~/libel-jcs-mode.el")
+(load-file "./libel-jcs-io.el")
+(load-file "./libel-jcs-mode.el")
 
-(load-file "~/libel-jcs-face.el")
-(load-file "~/libel-jcs-font.el")
+(load-file "./libel-jcs-face.el")
+(load-file "./libel-jcs-font.el")
 
-(load-file "~/libel-jcs-char.el")
-(load-file "~/libel-jcs-word.el")
-(load-file "~/libel-jcs-line.el")
+(load-file "./libel-jcs-char.el")
+(load-file "./libel-jcs-word.el")
+(load-file "./libel-jcs-line.el")
 
 (provide 'libel-jcs)
 ;;; libel-jcs.el ends here
